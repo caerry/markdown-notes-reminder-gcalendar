@@ -1,0 +1,6 @@
+google-api-core==2.24.0
+google-api-python-client==2.158.0
+google-auth==2.37.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.2.1
+pytz==2024.2
