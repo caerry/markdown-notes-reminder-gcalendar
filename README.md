@@ -14,22 +14,23 @@ This is going to google calendar at 2024.01.01 00:00 with the event text "Text f
 
 ## Obtaining credentials for google calendar 
 
-1. Google Cloud Project and API Setup
-    Create a Project:
-        Go to the Google Cloud Console.
-        Create a new project (e.g., "CalendarEventCreator").
+1. Create google project:
+   - Open Google Cloud Project and API Setup
+   - Create a Project:
+   - Go to the Google Cloud Console.
+   - Create a new project (e.g., "CalendarEventCreator").
    
-    Enable Google Calendar API:
-        In your project, navigate to "APIs & Services" > "Library."
-        Search for "Google Calendar API" and enable it.
+2. Enable Google Calendar API:
+   - In your project, navigate to "APIs & Services" > "Library."
+   - Search for "Google Calendar API" and enable it.
 
-    Create Credentials:
-        Go to "APIs & Services" > "Credentials."
-        Click "Create credentials" and choose "OAuth client ID."
-        Application type: Choose "Desktop app"
-        Name: Give it a name (e.g., "Calendar Script").
-        Click "Create."
-        Download the JSON file containing your credentials (it will have a name like client_secret_xxxx.json). Rename it to credentials.json and place it in the same directory as your script.
+3. Create Credentials:
+   - Go to "APIs & Services" > "Credentials."
+   - Click "Create credentials" and choose "OAuth client ID."
+   - Application type: Choose "Desktop app"
+   - Name: Give it a name (e.g., "Calendar Script").
+   - Click "Create."
+   - Download the JSON file containing your credentials (it will have a name like client_secret_xxxx.json). Rename it to credentials.json and place it in the same directory as your script.
 
 ## Installation 
 
