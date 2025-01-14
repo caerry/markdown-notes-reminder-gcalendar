@@ -93,7 +93,7 @@ def create_calendar_event(service, event_datetime, event_text, existing_events, 
     event_datetime_str = event_datetime.isoformat()
 
     # Check if the event already exists
-    if event_text in existing_events and existing_events[event_text] == event_datetime_str:
+    if event_text in existing_events:
         logging.info(f"Event '{event_text}' at '{event_datetime_str}' already exists. Skipping.")
         return
 
