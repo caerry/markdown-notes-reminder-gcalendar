@@ -72,6 +72,8 @@ def parse_markdown_file(filepath, timezone):
 
     return events
 
+
+
 def get_existing_events(service, timeMin, timeMax):
     """Retrieves existing events from the Google Calendar within a specific time range."""
     events_result = service.events().list(calendarId='primary', timeMin=timeMin, timeMax=timeMax,
@@ -93,7 +95,7 @@ def create_calendar_event(service, event_datetime, event_text, existing_events, 
     event_datetime_str = event_datetime.isoformat()
 
     # Check if the event already exists
-    if event_text in existing_events:
+    if len(existing_events) > 0:
         logging.info(f"Event '{event_text}' at '{event_datetime_str}' already exists. Skipping.")
         return
 
